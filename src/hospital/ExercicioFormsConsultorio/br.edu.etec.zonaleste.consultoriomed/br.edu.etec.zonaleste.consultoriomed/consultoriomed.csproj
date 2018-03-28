@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{55711687-970D-4736-B227-57ED447DA820}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>br.edu.etec.zonaleste.consultoriomed</RootNamespace>
+    <AssemblyName>br.edu.etec.zonaleste.consultoriomed</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAgendamentoConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgendamentoConsultas.Designer.cs">
+      <DependentUpon>frmAgendamentoConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadAgendaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadAgendaMedica.Designer.cs">
+      <DependentUpon>frmCadAgendaMedica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadAtendente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadAtendente.Designer.cs">
+      <DependentUpon>frmCadAtendente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadMed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadMed.Designer.cs">
+      <DependentUpon>frmCadMed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadUsuario.Designer.cs">
+      <DependentUpon>frmCadUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaAgendamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaAgendamentos.Designer.cs">
+      <DependentUpon>frmConsultaAgendamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultorio.Designer.cs">
+      <DependentUpon>frmConsultorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadEspecialidadeMed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadEspecialidadeMed.Designer.cs">
+      <DependentUpon>frmCadEspecialidadeMed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadMedicos.Designer.cs">
+      <DependentUpon>frmCadMedicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPaciente.Designer.cs">
+      <DependentUpon>frmCadPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorico.Designer.cs">
+      <DependentUpon>frmHistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAgendamentoConsultas.resx">
+      <DependentUpon>frmAgendamentoConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadAgendaMedica.resx">
+      <DependentUpon>frmCadAgendaMedica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadAtendente.resx">
+      <DependentUpon>frmCadAtendente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadMed.resx">
+      <DependentUpon>frmCadMed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadUsuario.resx">
+      <DependentUpon>frmCadUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaAgendamentos.resx">
+      <DependentUpon>frmConsultaAgendamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultorio.resx">
+      <DependentUpon>frmConsultorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadEspecialidadeMed.resx">
+      <DependentUpon>frmCadEspecialidadeMed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadMedicos.resx">
+      <DependentUpon>frmCadMedicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPaciente.resx">
+      <DependentUpon>frmCadPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistorico.resx">
+      <DependentUpon>frmHistorico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
